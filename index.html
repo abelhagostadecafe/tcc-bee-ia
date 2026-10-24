@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEE IA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<!-- ============ LOGO SVG ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="beeCoffeeLogo" viewBox="0 0 220 220">
+      <ellipse cx="112" cy="192" rx="72" ry="11" fill="#2B1B10" opacity="0.15"/>
+      <path d="M46 96 h108 v58 a54 54 0 0 1 -108 0 z" fill="#FFF7E8" stroke="#2B1B10" stroke-width="7"/>
+      <path d="M154 114 q36 4 36 32 q0 28 -36 32" fill="none" stroke="#2B1B10" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="100" cy="98" rx="54" ry="15" fill="#5A3418"/>
+      <ellipse cx="100" cy="95" rx="49" ry="12" fill="#9C6A34"/>
+      <path d="M78 80 q-11 -19 4 -32 q11 -11 0 -28" fill="none" stroke="#C9A06B" stroke-width="5.5" stroke-linecap="round" opacity="0.8"/>
+      <path d="M112 80 q11 -17 -2 -30 q-10 -11 2 -26" fill="none" stroke="#C9A06B" stroke-width="5.5" stroke-linecap="round" opacity="0.6"/>
+      <ellipse cx="132" cy="50" rx="24" ry="15" fill="#FFF7E8" opacity="0.8" transform="rotate(-24 132 50)"/>
+      <ellipse cx="156" cy="56" rx="21" ry="13" fill="#FFF7E8" opacity="0.7" transform="rotate(12 156 56)"/>
+      <ellipse cx="132" cy="68" rx="28" ry="21" fill="#F3A712"/>
+      <path d="M114 55 q18 11 38 0" stroke="#241710" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+      <path d="M110 69 q23 13 46 0" stroke="#241710" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+      <path d="M114 84 q18 9 38 0" stroke="#241710" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+      <circle cx="107" cy="52" r="12" fill="#241710"/>
+      <path d="M101 42 q-6 -11 -15 -13" stroke="#241710" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <circle cx="86" cy="28" r="3.2" fill="#241710"/>
+      <path d="M114 42 q4 -11 13 -14" stroke="#241710" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <circle cx="128" cy="27" r="3.2" fill="#241710"/>
+      <circle cx="104" cy="51" r="2.6" fill="#FFF7E8"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ CABEÇALHO ============ -->
+<header class="site-header">
+
+ <div class="container header-inner">
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#inicio" data-nav data-target="inicio">Início</a></li>
+        <li><a href="#como-usar" data-nav data-target="como-usar">Como usar IA</a></li>
+        <li><a href="#prompts" data-nav data-target="prompts">Prompts</a></li>
+        <li><a href="#por-materia" data-nav data-target="por-materia">IA por matéria</a></li>
+        <li><a href="#sobre" data-nav data-target="sobre">Sobre</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menu de navegação">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#inicio" data-nav data-target="inicio"> início</a></li>
+      <li><a href="#como-usar" data-nav data-target="como-usar">como usar a IA</a></li>
+      <li><a href="#prompts" data-nav data-target="prompts">prompts</a></li>
+      <li><a href="#por-materia" data-nav data-target="por-materia"> IA por matéria</a></li>
+      <li><a href="#sobre" data-nav data-target="sobre">sobre</a></li>
+    </ul>
+  </div>
+
+</header>
+
+<main id="main">
+
+<!-- ============ PÁGINA: INÍCIO ============ -->
+<section id="inicio" class="page">
+    <div class="hero honeycomb-bg">
+    <div class="container hero-grid">
+
+      <div>
+        <span class="hero-eyebrow">A tecnologia que amplia as possibilidades de quem ensina.
+</span>
+        <h1>BEE <span class="accent">IA</span></h1>
+
+        <p class="hero-text">Aprenda a utilizar Inteligência Artificial de forma prática para planejar aulas, criar atividades, adaptar conteúdos e economizar tempo.</p>
+        <div class="hero-actions">
+
+          
+        </div>
+
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-art-bg"></div>
+        <span class="hero-hex h1"></span>
+        <span class="hero-hex h2"></span>
+        <span class="hero-hex h3"></span>
+        <span class="hero-hex h4"></span>
+        <span class="hero-dot d1"></span>
+        <span class="hero-dot d2"></span>
+        <span class="hero-dot d3"></span>
+        <svg class="hero-logo"><use href="#beeCoffeeLogo"></use></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="hex-divider" aria-hidden="true"></div>
+
+  <div class="section">
+    <div class="container">
+
+      <div class="section-head">
+        <h2>SEU PONTO DE PARTIDA </h2>
+      </div>
+
+      <div class="features-grid">
+        <button type="button" class="feature-card reveal" data-nav data-target="como-usar">
+          <div class="feature-icon">🐝</div>
+          <h3>TUTORIAL</h3>
+          <p>Tutorial simples, pensado para professores com pouca ou nenhuma experiência na área da Inteligência Artificial.</p>
+        </button>
+
+        <button type="button" class="feature-card reveal" data-nav data-target="prompts">
+          <div class="feature-icon">☕</div>
+          <h3>PROMPTS CERTEIROS</h3>
+          <p> Prompts prontos para planos de aula, provas e resumos.</p>
+        </button>
+
+        <button type="button" class="feature-card reveal" data-nav data-target="sobre">
+          <div class="feature-icon">📚</div>
+          <h3>SOBRE O PROJETO</h3>
+          <p>Entenda mais sobre a criação do projeto.</p>
+        </button>
+
+        <button type="button" class="feature-card reveal" data-nav data-target="por-materia">
+          <div class="feature-icon">🤖</div>
+          <h3>ESCOLHA A IA IDEAL</h3>
+          <p>Descubra quais ferramentas podem ser mais adequadas para diferentes atividades pedagógicas.</p>
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PÁGINA: COMO USAR IA ============ -->
+<section id="como-usar" class="page">
+  <div class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2> COMO USAR A IA NA EDUCAÇÃO?</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-step">
+          <div class="step-num">1</div>
+          <div class="step-card">
+            <h3> O QUE É INTELIGÊNCIA ARTIFICIAL(IA)?</h3>
+            <p>A Inteligência Artificial (IA) é a capacidade de sistemas de computador simularem a inteligência humana para executar tarefas complexas, como aprender com dados, reconhecer padrões, tomar decisões e resolver problemas.</p>
+            <p>Para um professor, a IA atua como uma assistente pedagógica. Ela funciona como uma ferramenta capaz de automatizar tarefas burocráticas (como a correção de avaliações e planejamento de aulas). Além disso, é capaz de diagnosticar em segundos as dificuldades individuais de cada estudante, permitindo aprendizado personalizado mais focado no individuo.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">2</div>
+          <div class="step-card">
+            <h3> COMO DIALOGAR COM UMA IA?</h3>
+            <p>A solicitação que você escreve para a IA é chamado de <strong>"prompt"</strong>.Quanto mais claro e específico for o prompt, melhor será a resposta.</p>
+            <p>Ao em vez de pedir algo vago como "Faça exercícios de matemática", é ideal detalhar o tema, a série dos alunos e o que você espera receber.</p>
+            <div class="example-box"><strong>VAGO:</strong> "Crie uma atividade de história."<br><strong>CLARO:</strong> "Crie uma atividade de história sobre a Revolução Industrial para o 8º ano, com 5 questões de múltipla escolha e 5 questões dissertativas."</div>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">3</div>
+          <div class="step-card">
+            <h3>COMO CRIAR UM BOM PROMPT?</h3>
+            <p> Para criar um bom prompt, use essa estrutura base sempre que for pedir algo a uma IA:</p>
+            <div class="formula-box">
+              <span>Contexto</span><span class="plus">+</span>
+              <span>Objetivo</span><span class="plus">+</span>
+              <span>Público</span><span class="plus">+</span>
+              <span>Formato</span><span class="plus">+</span>
+              <span>Restrições</span>
+            </div>
+            <div class="example-box">
+              <strong>EXEMPLO:</strong> "Sou professor(a) do 8º ano <em>(contexto)</em>. Preciso revisar frações <em>(objetivo)</em> com uma turma que tem dificuldade em multiplicação de fração <em>(público)</em>. Elabore 12 questões com gabarito <em>(formato)</em>, sem usar números negativos <em>(restrições)</em>."
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">4</div>
+          <div class="step-card">
+            <h3>COMO PEDIR PARA ELABORAR ATIVIDADES?</h3>
+            <p> Você pode usar a mesma lógica ensinada anteriormente para pedir diferentes tipos de material. Alguns exemplos do que dá para solicitar:</p>
+            <ul>
+              <li>Exercícios divididos por nível de dificuldade</li>
+              <li>Provas, gabaritos e critérios de correção</li>
+              <li>Trabalhos e projetos em grupo</li>
+              <li>Atividades adaptadas para alunos com necessidades específicas</li>
+              <li>Resumos e materiais de apoio para revisão</li>
+              <li>Questões de múltipla escolha sobre um tema específico</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">5</div>
+          <div class="step-card">
+            <h3>COMO VERIFICAR A RESPOSTA DA IA?</h3>
+            <p>Nenhuma resposta da IA deve ir direto para os alunos sem revisão. Antes de usar, confira sempre:</p>
+            <ul>
+              <li>Se as informações apresentadas estão corretas</li>
+              <li>Se não há erros de português, cálculo ou datas</li>
+              <li>Se as fontes citadas (quando houver) realmente existem</li>
+              <li>Se o nível de dificuldade é adequado à turma</li>
+              <li>Se a atividade está alinhada ao que você planejou ensinar</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">6</div>
+          <div class="step-card">
+            <h3>COMO MELHORAR UMA RESPOSTA?</h3>
+            <p>Se a primeira resposta não ficou exatamente como o planejado você não precisa recomeçar do zero, basta pedir ajustes na mesma conversa.EXEMPLO:</p>
+            <div class="chip-row">
+              <span>"Simplifique a linguagem"</span>
+              <span>"Aumente a dificuldade"</span>
+              <span>"Adicione exemplos"</span>
+              <span>"Transforme em atividade"</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-num">7</div>
+          <div class="step-card">
+            <h3>CUIDADOS NECESSÁRIOS NA ULTILIZAÇÃO DA IA NA EDUCAÇÃO:</h3>
+            <p>Para usar a IA com segurança e responsabilidade no contexto escolar, deve seguir alguns cuidados:</p>
+            <ul>
+              <li>Nunca insira nomes, fotos ou dados pessoais dos alunos nas ferramentas de Inteligência Artificial</li>
+              <li>Sempre verifique as informações antes de repassá-las à turma</li>
+              <li>Use a IA como ferramenta de apoio, não como substituta do seu planejamento</li>
+              <li>Mantenha a autoria e a supervisão do professor sobre todo material usado em aula</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PÁGINA: PROMPTS ============ -->
+<section id="prompts" class="page">
+  <div class="section">
+    <div class="container">
+
+      <!-- HUB: grade de matérias -->
+      <div id="promptsHub">
+        <div class="section-head">
+          <h2>BIBLIOTECA DE PROMPTS</h2>
+        </div>
+        <div class="search-row hub-search-row">
+          <div class="search-box">
+            <span aria-hidden="true">🔎</span>
+            <input type="search" id="hubSearchPrompts" placeholder="Buscar matéria..." aria-label="Buscar matéria">
+          </div>
+        </div>
+        <div class="subject-hub-grid" id="promptsSubjectHub"></div>
+      </div>
+
+      <!-- DETALHE: página de uma matéria específica -->
+      <div id="promptsDetail" hidden>
+        <button class="back-link" id="promptsBack" type="button">← Todas as matérias</button>
+        <div class="detail-head" id="promptsDetailHead"></div>
+
+        <div class="prompt-toolbar">
+          <div class="search-row">
+            <div class="search-box">
+              <span aria-hidden="true">🔎</span>
+              <input type="search" id="promptSearch" placeholder="Buscar por palavra-chave dentro desta matéria..." aria-label="Buscar prompts">
+            </div>
+            <div class="select-wrap">
+              <select id="catFilter" aria-label="Filtrar por finalidade">
+                <option value="all">Todas as finalidades</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-bar">
+          <p class="results-count" id="resultsCount"></p>
+          <button class="clear-filters" id="clearFilters">Limpar filtros</button>
+        </div>
+
+        <div class="prompts-grid" id="promptsGrid"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PÁGINA: IA POR MATÉRIA ============ -->
+<section id="por-materia" class="page">
+  <div class="section">
+    <div class="container">
+
+      <div class="notice-box">
+        <span class="ic">⚠</span>
+        <p>ATENÇÃO!<br>Ferramentas de Inteligência Artificial mudam rapidamente. Verifique os recursos e condições atuais de cada plataforma antes de utilizá-las. As indicações abaixo não são uma regra, a melhor escolha sempre depende do objetivo do professor.</p>
+      </div>
+
+      <!-- HUB: grade de matérias -->
+      <div id="materiaHub">
+        <div class="section-head">
+          <h2> INDICAÇÃO DE FERRAMENTAS</h2>
+      
+        </div>
+        <div class="search-row hub-search-row">
+          <div class="search-box">
+            <span aria-hidden="true">🔎</span>
+            <input type="search" id="hubSearchMateria" placeholder="Buscar matéria..." aria-label="Buscar matéria">
+          </div>
+        </div>
+        <div class="subject-hub-grid" id="materiaSubjectHub"></div>
+      </div>
+
+      <!-- DETALHE: página de uma matéria específica -->
+      <div id="materiaDetail" hidden>
+        <button class="back-link" id="materiaBack" type="button">← Todas as matérias</button>
+        <div class="detail-head" id="materiaDetailHead"></div>
+        <div class="materia-grid materia-grid-single" id="materiaGrid"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PÁGINA: SOBRE ============ -->
+<section id="sobre" class="page">
+  <div class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-logo-wrap">
+          <svg class="about-logo"><use href="#beeCoffeeLogo"></use></svg>
+        </div>
+        <div class="about-text">
+          <div class="step-card">
+          <h2>O QUE É A BEE IA?</h2>
+          <p>O projeto BEE IA consiste em uma plataforma web desenvolvida utilizando as tecnologias HTML, CSS e JavaScript como requisito para a conclusão do curso de Informática. O sistema tem como objetivo principal aproximar o corpo docente do universo da Inteligência Artificial, integrando a educação às novas transformações tecnológicas de maneira simples, prática e responsável. Como ferramenta de suporte pedagógico, a BEE IA visa otimizar os processos de planejamento e reduzir a sobrecarga de trabalho que caracteriza a rotina dos professores.</p>
+         </div>
+         
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+</main>
+
+    <footer class="rodape">
+        <p>Projeto BEE IA • Trabalho de Conclusão de Curso de Informática Autora: Isabela Tavares Oesterreich | &copy; 2026. </p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
